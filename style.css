@@ -1,0 +1,68 @@
+body{
+    background-color: #131417;
+}
+
+.obrazok{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+.box{
+    background: #2C303A;
+    color: whitesmoke;
+    height: 450px;
+    width: 350px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.logg{
+font-family: 'Montserrat', sans-serif;
+font-size: 33px;
+margin-bottom: 30px;
+margin-top: 30px;
+padding-top: 30px;
+text-align: center;
+}
+
+input{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 10% 30px;
+    background: #fff;
+    border: none;
+    width: 250px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: block;
+   
+}
+button{
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    width: px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+    background-color: black;
+    color: whitesmoke;
+
+
+}
+
+.forgot{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.forgot:hover{
+    color: red;
+}
+
+.tlacitka{
+    text-align: center;
+   
+    
+}
