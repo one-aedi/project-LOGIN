@@ -37,7 +37,8 @@
     border-radius: 10px;
     border: gray solid 1.2px;
     overflow: hidden;
-    box-shadow: 0 0 20px 9px lightgray;
+    box-shadow: 0 0 20px 9px rgb(197, 193, 193);
+    
 }
 
 .button-box{
@@ -46,6 +47,7 @@
     position: relative;
     box-shadow: 0 0 20px 9px lightgray;
     border-radius: 30px;
+    
 }
 
 .toggle-btn{
@@ -55,6 +57,7 @@
     border: 0;
     outline: none;
     position: relative;
+    
 }
 
 #btn{
@@ -66,6 +69,7 @@
     background: linear-gradient(to right, #92e3a9, #92e3a9);
     border-radius: 30px;
     transition: .5s;
+    
 }
 
 .social-icons{
@@ -108,6 +112,7 @@
     outline: none;
     border-radius: 30px;
     box-shadow: 0 0 20px 9px lightgray;
+    
 }
 .check-box{
     margin: 30px 10px 30px 0;
@@ -129,6 +134,80 @@ span{
     left: 450px;
 }
 
+
+.loading * {
+    display: none;
+  }
+  
+  .dots-loader:not(:required) {
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -4px;
+    margin-top: -4px;
+    text-indent: -9999px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-radius: 100%;
+    box-shadow: #92e3a9 -14px -14px 0 7px, #263238 14px -14px 0 7px, #92e3a9 14px 14px 0 7px, #263238 -14px 14px 0 7px;
+    animation: dots-loader 4s infinite ease-in-out;
+    transform-origin: 50% 50%;
+    transform: scale(1);
+    transition: .3s all;
+  }
+  
+  @keyframes dots-loader {
+    0% {
+      box-shadow: #92e3a9 -14px -14px 0 7px, #263238 14px -14px 0 7px, #92e3a9 14px 14px 0 7px, #263238 -14px 14px 0 7px;
+    }
+    8.33% {
+      box-shadow: #92e3a9 14px -14px 0 7px, #263238 14px -14px 0 7px, #92e3a9 14px 14px 0 7px, #263238 -14px 14px 0 7px;
+    }
+    16.67% {
+      box-shadow: #92e3a9 14px 14px 0 7px, #263238 14px 14px 0 7px, #92e3a9 14px 14px 0 7px, #263238 -14px 14px 0 7px;
+    }
+    25% {
+      box-shadow: #92e3a9 -14px 14px 0 7px, #263238 -14px 14px 0 7px, #92e3a9 -14px 14px 0 7px, #263238 -14px 14px 0 7px;
+    }
+    33.33% {
+      box-shadow: #92e3a9 -14px -14px 0 7px, #263238 -14px 14px 0 7px, #92e3a9 -14px -14px 0 7px, #263238 -14px -14px 0 7px;
+    }
+    41.67% {
+      box-shadow: #92e3a9 14px -14px 0 7px, #263238 -14px 14px 0 7px, #92e3a9 -14px -14px 0 7px, #263238 14px -14px 0 7px;
+    }
+    50% {
+      box-shadow: #92e3a9 14px 14px 0 7px, #263238 -14px 14px 0 7px, #92e3a9 -14px -14px 0 7px, #263238 14px -14px 0 7px;
+    }
+    58.33% {
+      box-shadow: #92e3a9 -14px 14px 0 7px, #263238 -14px 14px 0 7px, #92e3a9 -14px -14px 0 7px, #263238 14px -14px 0 7px;
+    }
+    66.67% {
+      box-shadow: #92e3a9 -14px -14px 0 7px, #263238 -14px -14px 0 7px, #92e3a9 -14px -14px 0 7px, #263238 14px -14px 0 7px;
+    }
+    75% {
+      box-shadow: #92e3a9 14px -14px 0 7px, #263238 14px -14px 0 7px, #92e3a9 14px -14px 0 7px, #263238 14px -14px 0 7px;
+    }
+    83.33% {
+      box-shadow: #92e3a9 14px 14px 0 7px, #263238 14px -14px 0 7px, #92e3a9 14px 14px 0 7px, #263238 14px 14px 0 7px;
+    }
+    91.67% {
+      box-shadow: #92e3a9 -14px 14px 0 7px, #263238 14px -14px 0 7px, #92e3a9 14px 14px 0 7px, #263238 -14px 14px 0 7px;
+    }
+    100% {
+      box-shadow: #92e3a9 -14px -14px 0 7px, #263238 14px -14px 0 7px, #92e3a9 14px 14px 0 7px, #263238 -14px 14px 0 7px;
+    }
+  }
+  
+  .loaded .dots-loader {
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+    transform: scale(0);
+  }
 
 /*responisve*/
 
